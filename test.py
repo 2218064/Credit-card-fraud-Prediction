@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 # 데이터 불러오기
 data = pd.read_csv(r"C:\Users\82105\OneDrive\문서\GitHub\Credit-card-fraud-Prediction\data\card_transdata.csv")
 
-# 데이터 전처리(간단히 숫자형 특성만 사용하고 정규화를 수행합니다.)
+# 데이터 전처리(간단히 숫자형 특성만 사용하고 정규화를 수행한다.)
 X = data.drop('fraud', axis=1)
 y = data['fraud']
 
